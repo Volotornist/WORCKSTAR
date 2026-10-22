@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — Лабораторна 2</title>
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Зв'яжіться з нами</h2>
+        <p>Це контактна сторінка навчального HTML-сайту.</p>
+        <form action="#" method="get">
+    <div class="form-row"></div>
+            <label for="name">Ваше ім'я:</label>
+    <input type="text" id="name" name="name"
+       placeholder="Введіть ваше ім'я"
+       required minlength="2" maxlength="50"
+       pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'’ -]+"
+       title="Введіть ім'я від 2 до 50 символів">
+       </div>
+       <div class="form-row"></div>
+       <label for="email">Ваша електронна пошта:</label>
+<input type="email" id="email" name="email"
+       placeholder="example@gmail.com"
+       required>
+       </div>
+       <div class="form-row">
+       <label for="phone">Ваш телефон:</label>
+<input type="tel" id="phone" name="phone"
+       placeholder="+380XXXXXXXXX"
+       pattern="\+380[0-9]{9}"
+       title="Введіть номер у форматі +380XXXXXXXXX"
+       required>
+       </div>
+       <div class="form-row">
+       <label for="message">Ваше повідомлення:</label>
+<textarea id="message" name="message"
+          placeholder="Введіть ваше повідомлення"
+          minlength="10" maxlength="500"
+          required></textarea>
+          </div>
+          <div class="form-row">
+          <button type="submit">Надіслати</button>
+          </div>
+</form>
+<section aria-labelledby="contact-title" class="contact-block">
+    <h3 id="contact-title">Наші контакти</h3>
+    <address>
+        Email: example@gmail.com
+    </address>
+</section>
+    </main>
+    <aside aria-labelledby="social-title">
+    <h3 id="social-title">Соціальні мережі</h3>
+    <ul>
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://instagram.com">Instagram</a></li>
+        <li><a href="https://linkedin.com">LinkedIn</a></li>
+    </ul>
+</aside>
+<footer>
+    <p>Група: 6.1214-пі-2</p>
+</footer>
+</body>
+</html>
