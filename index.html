@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторна робота №1</title>
+    <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги.">
+    <title>Лабораторна 2 - Головна</title>
+    <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
+    <a class="skip-link" href="#main">Перейти до основного контенту</a>
+    <header>
+    <h1>Мій перший лендінг</h1>
+    <nav aria-label="Головна навігація">
+        <ul>
+            <li><a href="index.html" aria-current="page">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+</header> 
+<main id="main">
+    <article>
+        <header>
+            <h2>Новини</h2>
+        </header>
+        <p>Це моя перша новина про створення навчального HTML-сайту.</p>
+        <figure>
+    <img src="assets/images/android-icon-192x192.png"
+         alt="Зображення для новини"
+         width="192">
+    <figcaption>Зображення до моєї першої новини</figcaption>
+</figure>
+    </article>
+    <section aria-labelledby="benefits-title" class="benefits">
+    <h3 id="benefits-title">Наші переваги</h3>
+    <ul class="advantages">
+        <li>Сучасні технології навчання</li>
+        <li>Зручна робота з інформацією</li>
+        <li>Практичні навички веброзробки</li>
+    </ul>
+</section>
+<section aria-labelledby="services-title">
+    <h2 id="services-title">Наші послуги</h2>
+    <table>
+        <caption>Перелік послуг</caption>
+        <thead>
+            <tr>
+                <th scope="col">Послуга</th>
+                <th scope="col">Опис</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Веброзробка</td>
+                <td>Створення сучасних сайтів</td>
+            </tr>
+            <tr>
+                <td>Дизайн</td>
+                <td>Розробка інтерфейсів</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</main>
     <p>Студент: VOLTORNIST ANDRIY</p>
     <p>Група: 6.1214-пі-2</p>
 </body>
