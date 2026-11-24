@@ -4,82 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти — Лабораторна 2</title>
+    <meta name="description" content="Контактна інформація та форма зворотного зв'язку.">
+    <title>Контакти — Лабораторна 3</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <h1 id="site-title">Контакти</h1>
-        <nav class="site-nav" aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+    <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+    <header class="header">
+        <h1 class="header__title" id="site-title">Мій перший лендінг</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="about.html">Про нас</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="contacts.html" aria-current="page">Контакти</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main" id="main">
         <h2>Зв'яжіться з нами</h2>
         <p>Це контактна сторінка навчального HTML-сайту.</p>
 
-        <form action="#" method="get">
-            <div class="form-row">
-                <label for="name">Ваше ім'я:</label>
-                <input type="text" id="name" name="name"
+        <form class="form" action="#" method="get">
+            <div class="form__row">
+                <label class="form__label" for="name">Ваше ім'я:</label>
+                <input class="form__input" type="text" id="name" name="name"
                        placeholder="Введіть ваше ім'я"
                        required minlength="2" maxlength="50"
                        pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'’ \-]+"
                        title="Введіть ім'я від 2 до 50 символів">
             </div>
 
-            <div class="form-row">
-                <label for="email">Ваша електронна пошта:</label>
-                <input type="email" id="email" name="email"
+            <div class="form__row">
+                <label class="form__label" for="email">Ваша електронна пошта:</label>
+                <input class="form__input" type="email" id="email" name="email"
                        placeholder="example@gmail.com"
                        required>
             </div>
 
-            <div class="form-row">
-                <label for="phone">Ваш телефон:</label>
-                <input type="tel" id="phone" name="phone"
+            <div class="form__row">
+                <label class="form__label" for="phone">Ваш телефон:</label>
+                <input class="form__input" type="tel" id="phone" name="phone"
                        placeholder="+380XXXXXXXXX"
                        pattern="\+380[0-9]{9}"
                        title="Введіть номер у форматі +380XXXXXXXXX"
                        required>
             </div>
 
-            <div class="form-row">
-                <label for="message">Ваше повідомлення:</label>
-                <textarea id="message" name="message"
+            <div class="form__row">
+                <label class="form__label" for="message">Ваше повідомлення:</label>
+                <textarea class="form__textarea" id="message" name="message"
                           placeholder="Введіть ваше повідомлення"
                           minlength="10" maxlength="500"
                           required></textarea>
             </div>
 
-            <div class="form-row">
-                <button type="submit">Надіслати</button>
+            <div class="form__row">
+                <button class="form__button" type="submit">Надіслати</button>
             </div>
         </form>
 
-        <section aria-labelledby="contact-title" class="contact-block">
-            <h3 id="contact-title">Наші контакти</h3>
-            <address>
+        <section class="contact-block" aria-labelledby="contact-title">
+            <h3 class="contact-block__title" id="contact-title">Наші контакти</h3>
+            <address class="contact-block__address">
                 Email: example@gmail.com
             </address>
         </section>
     </main>
 
-    <aside class="sidebar" aria-labelledby="social-title">
-        <h3 id="social-title">Соціальні мережі</h3>
-        <ul>
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <aside class="sidebar sidebar--social" aria-labelledby="social-title">
+        <h3 class="sidebar__title" id="social-title">Соціальні мережі</h3>
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
         </ul>
     </aside>
 
-    <footer class="site-footer">
-        <p>Група: 6.1214-пі-2</p>
+    <footer class="footer">
+        <p class="footer__text">Студент: VOLTORNIST ANDRIY</p>
+        <p class="footer__text">Група: 6.1214-пі-2</p>
     </footer>
 </body>
 </html>
