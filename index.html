@@ -10,9 +10,9 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Перейти до основного контенту</a>
-    <header>
-        <h1>Мій перший лендінг</h1>
-        <nav aria-label="Головна навігація">
+    <header class="site-header">
+        <h1 id="site-title">Мій перший лендінг</h1>
+        <nav class="site-nav" aria-label="Головна навігація">
             <ul>
                 <li><a href="index.html" aria-current="page">Головна</a></li>
                 <li><a href="about.html">Про нас</a></li>
@@ -22,7 +22,7 @@
     </header>
 
     <main id="main">
-        <article>
+        <article class="hero-article">
             <header>
                 <h2>Новини</h2>
             </header>
@@ -44,39 +44,39 @@
             </ul>
         </section>
 
-        <section aria-labelledby="services-title">
+        <section aria-labelledby="services-title" class="services">
             <h2 id="services-title">Наші послуги</h2>
             <table>
                 <caption>Перелік послуг</caption>
                 <thead>
                     <tr>
                         <th scope="col">Послуга</th>
-                        <th scope="col">Опис</th>
+                        <th scope="col">Опис</th><th scope="col">Ціна</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Веброзробка</td>
-                        <td>Створення сучасних сайтів</td>
+                        <td>Створення сучасних сайтів</td><td>500 $</td>
                     </tr>
                     <tr>
                         <td>Дизайн</td>
-                        <td>Розробка інтерфейсів</td>
+                        <td>Розробка інтерфейсів</td><td>300 $</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
-    <aside aria-labelledby="links-title">
+    <aside class="sidebar" aria-labelledby="links-title">
         <h2 id="links-title">Корисні посилання</h2>
         <ul>
-            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
-            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
     </aside>
 
-    <footer>
+    <footer class="site-footer">
         <p>Студент: VOLTORNIST ANDRIY</p>
         <p>Група: 6.1214-пі-2</p>
     </footer>

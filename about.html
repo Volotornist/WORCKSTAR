@@ -6,9 +6,9 @@
     <title>Про нас — Лабораторна 2</title>
 </head>
 <body>
-    <header>
-        <h1>Про нас</h1>
-        <nav aria-label="Головна навігація">
+    <header class="site-header">
+        <h1 id="site-title">Про нас</h1>
+        <nav class="site-nav" aria-label="Головна навігація">
             <ul>
                 <li><a href="index.html">Головна</a></li>
                 <li><a href="about.html" aria-current="page">Про нас</a></li>
@@ -20,7 +20,7 @@
     <main>
         <h2>Інформація про нас</h2>
         <p>Це навчальний сайт, створений під час лабораторної роботи №2.</p>
-        <section aria-labelledby="values-title">
+        <section aria-labelledby="values-title" class="values">
     <h3 id="values-title">Наші цінності</h3>
     <ul>
         <li>HTML, семантика, доступність</li>
@@ -28,7 +28,7 @@
         <li>JavaScript, робота з даними</li>
     </ul>
 </section>
-<section aria-labelledby="history-title">
+<section aria-labelledby="history-title" class="history">
     <h3 id="history-title">Історія</h3>
     <ol>
         <li>2023 — Перші навчальні проєкти</li>
@@ -36,16 +36,15 @@
         <li>2025 — Запуск навчального лендінгу</li>
     </ol>
 </section>
-<section aria-labelledby="principles-title">
+</main><aside class="sidebar" aria-labelledby="principles-title">
     <h3 id="principles-title">Принципи</h3>
     <ul>
         <li>Якість коду та простота</li>
         <li>Навчання через практику</li>
         <li>Відповідальність за результат</li>
     </ul>
-</section>
-    </main>
-    <footer>
+</aside>
+    <footer class="site-footer">
     <p>Група: 6.1214-пі-2</p>
 </footer>
 </body>
