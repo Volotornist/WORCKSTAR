@@ -5,80 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги.">
-    <title>Лабораторна 2 - Головна</title>
+    <title>Лабораторна 3 - Головна</title>
     <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
     <a class="skip-link" href="#main">Перейти до основного контенту</a>
-    <header class="site-header">
-        <h1 id="site-title">Мій перший лендінг</h1>
-        <nav class="site-nav" aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html" aria-current="page">Головна</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+
+    <header class="header">
+        <h1 class="header__title" id="site-title">Мій перший лендінг</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html" aria-current="page">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="about.html">Про нас</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="contacts.html">Контакти</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main id="main">
-        <article class="hero-article">
-            <header>
-                <h2>Новини</h2>
+    <main class="main" id="main">
+        <article class="article">
+            <header class="article__header">
+                <h2 class="article__title">Новини</h2>
             </header>
-            <p>Це моя перша новина про створення навчального HTML-сайту.</p>
-            <figure>
-                <img src="assets/images/android-icon-192x192.png"
+            <p class="article__text">Це моя перша новина про створення навчального HTML-сайту.</p>
+
+            <figure class="media article__media media--framed">
+                <img class="media__img"
+                     src="assets/images/android-icon-192x192.png"
                      alt="Зображення для новини"
                      width="192">
-                <figcaption>Зображення до моєї першої новини</figcaption>
+                <figcaption class="media__caption">Зображення до моєї першої новини</figcaption>
             </figure>
         </article>
 
-        <section aria-labelledby="benefits-title" class="benefits">
-            <h3 id="benefits-title">Наші переваги</h3>
-            <ul class="advantages">
-                <li>Сучасні технології навчання</li>
-                <li>Зручна робота з інформацією</li>
-                <li>Практичні навички веброзробки</li>
+        <section class="benefits" aria-labelledby="benefits-title">
+            <h3 class="benefits__title" id="benefits-title">Наші переваги</h3>
+            <ul class="benefits__list">
+                <li class="benefits__item">Сучасні технології навчання</li>
+                <li class="benefits__item">Зручна робота з інформацією</li>
+                <li class="benefits__item">Практичні навички веброзробки</li>
             </ul>
         </section>
 
-        <section aria-labelledby="services-title" class="services">
-            <h2 id="services-title">Наші послуги</h2>
-            <table>
-                <caption>Перелік послуг</caption>
+        <section class="services" aria-labelledby="services-title">
+            <h2 class="services__title" id="services-title">Наші послуги</h2>
+            <table class="services__table">
+                <caption class="services__caption">Перелік послуг</caption>
                 <thead>
-                    <tr>
-                        <th scope="col">Послуга</th>
-                        <th scope="col">Опис</th><th scope="col">Ціна</th>
+                    <tr class="services__row">
+                        <th class="services__header" scope="col">Послуга</th>
+                        <th class="services__header" scope="col">Опис</th>
+                        <th class="services__header" scope="col">Ціна</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Веброзробка</td>
-                        <td>Створення сучасних сайтів</td><td>500 $</td>
+                    <tr class="services__row">
+                        <td class="services__cell">Веброзробка</td>
+                        <td class="services__cell">Створення сучасних сайтів</td>
+                        <td class="services__cell">500 $</td>
                     </tr>
-                    <tr>
-                        <td>Дизайн</td>
-                        <td>Розробка інтерфейсів</td><td>300 $</td>
+                    <tr class="services__row">
+                        <td class="services__cell">Дизайн</td>
+                        <td class="services__cell">Розробка інтерфейсів</td>
+                        <td class="services__cell">300 $</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
-    <aside class="sidebar" aria-labelledby="links-title">
-        <h2 id="links-title">Корисні посилання</h2>
-        <ul>
-            <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
-            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <aside class="sidebar sidebar--links" aria-labelledby="links-title">
+        <h2 class="sidebar__title" id="links-title">Корисні посилання</h2>
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
         </ul>
     </aside>
 
-    <footer class="site-footer">
-        <p>Студент: VOLTORNIST ANDRIY</p>
-        <p>Група: 6.1214-пі-2</p>
+    <footer class="footer">
+        <p class="footer__text">Студент: VOLTORNIST ANDRIY</p>
+        <p class="footer__text">Група: 6.1214-пі-2</p>
     </footer>
 </body>
 </html>
