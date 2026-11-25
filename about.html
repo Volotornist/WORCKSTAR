@@ -1,71 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Інформація про навчальний сайт, наші цінності та принципи.">
-    <title>Про нас — Лабораторна 3</title>
+    <title>Про нас — Лабораторна 4</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Перейти до основного контенту</a>
 
-    <header class="header">
-        <h1 class="header__title" id="site-title">Мій перший лендінг</h1>
-        <nav class="navigation" aria-label="Головна навігація">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="index.html">Головна</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="about.html" aria-current="page">Про нас</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="contacts.html">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="layout">
+        <header class="header">
+            <h1 class="header__title">Мій перший лендінг</h1>
+            <nav class="nav" aria-label="Головна навігація">
+                <a class="nav__link" href="index.html">Головна</a>
+                <a class="nav__link" href="about.html" aria-current="page">Про нас</a>
+                <a class="nav__link nav__link--cta" href="contacts.html">Контакти</a>
+            </nav>
+        </header>
 
-    <main class="main" id="main">
-        <article class="about-article">
-            <h2 class="about-article__title">Інформація про нас</h2>
-            <p class="about-article__text">Це навчальний сайт, створений під час лабораторної роботи №2 та оформлений у лабораторній роботі №3.</p>
-        </article>
+        <aside class="sidebar">
+            <section class="sidebar__section">
+                <h2 class="sidebar__title">Корисні посилання</h2>
+                <ul class="sidebar__list">
+                    <li><a class="sidebar__link" href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                    <li><a class="sidebar__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </section>
 
-        <section class="skills" aria-labelledby="values-title">
-            <h3 class="skills__title" id="values-title">Наші цінності</h3>
-            <ul class="skills__list">
-                <li class="skills__item">HTML, семантика, доступність</li>
-                <li class="skills__item">CSS, оформлення вебсторінок</li>
-                <li class="skills__item">JavaScript, робота з даними</li>
-            </ul>
-        </section>
+            <section class="sidebar__section">
+                <h2 class="sidebar__title">Наші цінності</h2>
+                <ul class="sidebar__list">
+                    <li>Якість коду та простота</li>
+                    <li>Навчання через практику</li>
+                    <li>Відповідальність за результат</li>
+                </ul>
+            </section>
 
-        <section class="history" aria-labelledby="history-title">
-            <h3 class="history__title" id="history-title">Історія</h3>
-            <ol class="history__list">
-                <li class="history__item">2023 — Перші навчальні проєкти</li>
-                <li class="history__item">2024 — Командні вебпроєкти та хакатони</li>
-                <li class="history__item">2025 — Запуск навчального лендінгу</li>
-            </ol>
-        </section>
-    </main>
+            <section class="sidebar__section">
+                <h2 class="sidebar__title">Соціальні мережі</h2>
+                <ul class="sidebar__list">
+                    <li><a class="sidebar__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a class="sidebar__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a class="sidebar__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </section>
+        </aside>
 
-    <aside class="sidebar sidebar--values" aria-labelledby="principles-title">
-        <h3 class="sidebar__title" id="principles-title">Принципи</h3>
-        <ul class="sidebar__list">
-            <li class="sidebar__item">Якість коду та простота</li>
-            <li class="sidebar__item">Навчання через практику</li>
-            <li class="sidebar__item">Відповідальність за результат</li>
-        </ul>
-    </aside>
+        <main class="main" id="main">
+            <article class="about-article">
+                <h2 class="about-article__title">Інформація про нас</h2>
+                <p class="about-article__text">Це навчальний сайт, створений під час лабораторної роботи №2 та оформлений у лабораторній роботі №3.</p>
+            </article>
 
-    <footer class="footer">
-        <p class="footer__text">Студент: VOLTORNIST ANDRIY</p>
-        <p class="footer__text">Група: 6.1214-пі-2</p>
-    </footer>
+            <section class="skills" aria-labelledby="values-title">
+                <h3 class="skills__title" id="values-title">Наші цінності</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML, семантика, доступність</li>
+                    <li class="skills__item">CSS, оформлення вебсторінок</li>
+                    <li class="skills__item">JavaScript, робота з даними</li>
+                </ul>
+            </section>
+
+            <section class="history" aria-labelledby="history-title">
+                <h3 class="history__title" id="history-title">Історія</h3>
+                <ol class="history__list">
+                    <li class="history__item">2023 — Перші навчальні проєкти</li>
+                    <li class="history__item">2024 — Командні вебпроєкти та хакатони</li>
+                    <li class="history__item">2025 — Запуск навчального лендінгу</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <p class="footer__text">Студент: VOLTORNIST ANDRIY</p>
+                    <p class="footer__text">Група: 6.1214-пі-2</p>
+                </div>
+
+                <section class="footer__contacts">
+                    <h2 class="footer__title">Наші контакти</h2>
+                    <address class="footer__address">
+                        Email: <a href="mailto:example@gmail.com">example@gmail.com</a>
+                    </address>
+                </section>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

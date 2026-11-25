@@ -1,101 +1,113 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги.">
-    <title>Лабораторна 3 - Головна</title>
+    <meta name="description" content="Новини навчального вебпроєкту">
+    <title>Лабораторна 4 — Головна</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Перейти до основного контенту</a>
 
-    <header class="header">
-        <h1 class="header__title" id="site-title">Мій перший лендінг</h1>
-        <nav class="navigation" aria-label="Головна навігація">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="index.html" aria-current="page">Головна</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="about.html">Про нас</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="contacts.html">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="layout">
+        <header class="header">
+            <h1 class="header__title">Мій перший лендінг</h1>
+            <nav class="nav" aria-label="Головна навігація">
+                <a class="nav__link" href="index.html" aria-current="page">Головна</a>
+                <a class="nav__link" href="about.html">Про нас</a>
+                <a class="nav__link nav__link--cta" href="contacts.html">Контакти</a>
+            </nav>
+        </header>
 
-    <main class="main" id="main">
-        <article class="article">
-            <header class="article__header">
-                <h2 class="article__title">Новини</h2>
-            </header>
-            <p class="article__text">Це моя перша новина про створення навчального HTML-сайту.</p>
+        <aside class="sidebar">
+            <section class="sidebar__section">
+                <h2 class="sidebar__title">Корисні посилання</h2>
+                <ul class="sidebar__list">
+                    <li><a class="sidebar__link" href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                    <li><a class="sidebar__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </section>
 
-            <figure class="media article__media media--framed">
-                <img class="media__img"
-                     src="assets/images/android-icon-192x192.png"
-                     alt="Зображення для новини"
-                     width="192">
-                <figcaption class="media__caption">Зображення до моєї першої новини</figcaption>
-            </figure>
-        </article>
+            <section class="sidebar__section">
+                <h2 class="sidebar__title">Наші цінності</h2>
+                <ul class="sidebar__list">
+                    <li>Якість коду та простота</li>
+                    <li>Навчання через практику</li>
+                    <li>Відповідальність за результат</li>
+                </ul>
+            </section>
 
-        <section class="benefits" aria-labelledby="benefits-title">
-            <h3 class="benefits__title" id="benefits-title">Наші переваги</h3>
-            <ul class="benefits__list">
-                <li class="benefits__item">Сучасні технології навчання</li>
-                <li class="benefits__item">Зручна робота з інформацією</li>
-                <li class="benefits__item">Практичні навички веброзробки</li>
-            </ul>
-        </section>
+            <section class="sidebar__section">
+                <h2 class="sidebar__title">Соціальні мережі</h2>
+                <ul class="sidebar__list">
+                    <li><a class="sidebar__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a class="sidebar__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a class="sidebar__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </section>
+        </aside>
 
-        <section class="services" aria-labelledby="services-title">
-            <h2 class="services__title" id="services-title">Наші послуги</h2>
-            <table class="services__table">
-                <caption class="services__caption">Перелік послуг</caption>
-                <thead>
-                    <tr class="services__row">
-                        <th class="services__header" scope="col">Послуга</th>
-                        <th class="services__header" scope="col">Опис</th>
-                        <th class="services__header" scope="col">Ціна</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="services__row">
-                        <td class="services__cell">Веброзробка</td>
-                        <td class="services__cell">Створення сучасних сайтів</td>
-                        <td class="services__cell">500 $</td>
-                    </tr>
-                    <tr class="services__row">
-                        <td class="services__cell">Дизайн</td>
-                        <td class="services__cell">Розробка інтерфейсів</td>
-                        <td class="services__cell">300 $</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+        <main class="main" id="main">
+            <section class="news">
+                <h2 class="news__title">Останні новини</h2>
 
-    <aside class="sidebar sidebar--links" aria-labelledby="links-title">
-        <h2 class="sidebar__title" id="links-title">Корисні посилання</h2>
-        <ul class="sidebar__list">
-            <li class="sidebar__item">
-                <a class="sidebar__link" href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
-            </li>
-            <li class="sidebar__item">
-                <a class="sidebar__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </li>
-        </ul>
-    </aside>
+                <div class="news__list">
+                    <article class="news-card">
+                        <figure class="media media--framed">
+                            <img class="media__img" src="assets/images/android-icon-192x192.png" alt="Зображення навчального проєкту">
+                        </figure>
+                        <h3 class="news-card__title">Створення навчального сайту</h3>
+                        <p class="news-card__text">Перші кроки у веброзробці та створення структури HTML-сторінок.</p>
+                        <div class="news-card__meta">
+                            <time datetime="2026-11-25">25.11.2026</time>
+                            <a class="news-card__link" href="about.html">Читати далі</a>
+                        </div>
+                    </article>
 
-    <footer class="footer">
-        <p class="footer__text">Студент: VOLTORNIST ANDRIY</p>
-        <p class="footer__text">Група: 6.1214-пі-2</p>
-    </footer>
+                    <article class="news-card">
+                        <figure class="media media--framed">
+                            <img class="media__img" src="assets/images/android-icon-192x192.png" alt="Зображення до новини про Flexbox">
+                        </figure>
+                        <h3 class="news-card__title">Робота з Flexbox</h3>
+                        <p class="news-card__text">Використання Flexbox для зручного розташування елементів та навігації.</p>
+                        <div class="news-card__meta">
+                            <time datetime="2026-11-25">25.11.2026</time>
+                            <a class="news-card__link" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox">Читати далі</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <figure class="media media--framed">
+                            <img class="media__img" src="assets/images/android-icon-192x192.png" alt="Зображення до новини про CSS Grid">
+                        </figure>
+                        <h3 class="news-card__title">Оновлення макету сайту</h3>
+                        <p class="news-card__text">Створення спільного каркасу сторінок за допомогою CSS Grid.</p>
+                        <div class="news-card__meta">
+                            <time datetime="2026-11-25">25.11.2026</time>
+                            <a class="news-card__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout">Читати далі</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <p class="footer__text">Студент: VOLTORNIST ANDRIY</p>
+                    <p class="footer__text">Група: 6.1214-пі-2</p>
+                </div>
+
+                <section class="footer__contacts">
+                    <h2 class="footer__title">Наші контакти</h2>
+                    <address class="footer__address">
+                        Email: <a href="mailto:example@gmail.com">example@gmail.com</a>
+                    </address>
+                </section>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
